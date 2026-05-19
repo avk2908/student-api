@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  user-service:
+    build: ./user-service
+    ports:
+      - "4001:4001"
+
+  product-service:
+    build: ./product-service
+    ports:
+      - "4002:4002"
